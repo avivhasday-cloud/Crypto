@@ -219,6 +219,9 @@ h2{
   padding: 10px;
   
 }
+#aboutContainer h1{
+  color:darkcyan;
+}
 
 #aboutContainer p{
   font-size: 2rem;
@@ -467,41 +470,71 @@ h2{
   height: 80%;
 }
 
-/* @media screen and (min-width: 450px){
-  .card{
-    flex-basis: 20% !important;
-  }
-  .currencyImg{
-    margin-left: 250px;
-  }
-} */
 
-/* @media screen and (min-width: 1200px) and (max-width:1760px){
+@media screen and (min-width: 1200px) and (max-width:1600px){
+  .modal-body .currencyImg {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  #liveReportsContainer{
+    margin-left: 0px;
+
+  }
+  #container{
+    width: 100%;
+    height: 80%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width:1200px){
   .card{
-    flex-basis: 20% !important;
+    flex-basis: 25% !important;
   }
-  .switch{
-    display: inline-block;
-    margin-left: 200px;
+  .modal-body .card{
+    flex-basis: 50% !important;
   }
-  .card button{
-    bottom: 0px;
-  }
-} */
-/* @media screen and (max-width: 1300px){
-  .card{
-    flex-basis: 30% !important;
-  }
-  .card .currencyImg{
-      margin-left: 250px;
+  .button{
+    padding: 10px 10px;
   }
   .modal-body .currencyImg {
     margin-left: 0;
+    align-self: flex-start;
   }
-  .switch{
-    margin-left: 105px;
+  #liveReportsContainer{
+    margin-left: 0px;
+
   }
-} */
+  #container{
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width:800px){
+  .card{
+    flex-basis: 40% !important;
+  }
+  .button{
+    padding: 10px 10px;
+  }
+  .modal-body .currencyImg {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  #searchCoin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  #liveReportsContainer{
+    margin-left: 0px;
+
+  }
+  #container{
+    width: 100%;
+    height: 80%;
+  }
+}
+
 
 @media screen and (max-width: 500px) {
   .card {
@@ -509,18 +542,14 @@ h2{
     margin: 0px;
     margin-bottom: 30px !important;
   }
+  h1{
+    font-size: 2rem;
+  }
   
-  #header{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .slidemenu{
-    width: 100%;
-  }
+
   #searchCoin{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   .modal-body .currencyImg {
@@ -530,14 +559,20 @@ h2{
 
   
   #searchCoinInput{
+    font-size: 1rem;
+    padding: 15px;
     width: 150px;
   }
- 
-  
-  
   #searchCoin{
     margin: 0px;
     margin-top: 30px;
+  }
+  #liveReportsContainer{
+    margin-left: 0px;
+  }
+  #container{
+    width: 100%;
+    height: 80%;
   }
 }
 

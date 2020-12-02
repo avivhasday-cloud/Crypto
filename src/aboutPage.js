@@ -6,14 +6,14 @@ function createAboutPage(){
                     <h1>About Me</h1>
                     <p>
                     My name is Aviv Hasday, 22 years old from Rehovot.
-                    Since childwood i liked playing games and after a few years i develop 
-                    interest in computers, how the oprating system works, how games
-                    works...
-                    As i shown more interest in computers i started to study a little bit on
-                    my own about linux (commands and stuff), python and now im currently interested
-                    in WEB development so that's why i started this course.
-                    my plans for the future is to become a web developer and in a few years later 
-                    i would like to change my profession to cyber security.
+                    I served in the Air Force, my job was to make sure the pilots's
+                    survival equipment is usable if they needed to use , such as oxygen masks, parachute
+                    and more.
+                    Since childwood i play video games and showing interest in computers,
+                    recently i started to learn python and linux operating system in my spare time.
+                    my plans for the future is to become a web developer and eventually will go to 
+                    the cyber security area as i think it will suits me more.
+                    
 
                      </p>
                 </div>
