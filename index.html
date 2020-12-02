@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6ca4f8886a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cryptonite</title>
+</head>
+<body onload="onGetCurrencyData()">
+    
+    
+    <header class="parallaxImg">
+        <h1 class="text-light">Cryptonite</h1>
+    </header>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+      </div>
+    <section id="header">
+        <nav class="slidemenu">
+            <!-- Item 1 -->
+            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle home" checked/>
+            <label for="slide-item-1"><p class="icon"><i class="fas fa-home"></i></p><span>Home</span></label>
+            <!-- Item 2 -->
+            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle liveReports"/>
+            <label for="slide-item-2"><p class="icon"><i class="fas fa-chart-bar"></i></p><span>Live Reports</span></label>
+            <!-- Item 3 -->
+            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle about"/>
+            <label for="slide-item-3"><p class="icon"><i class="fas fa-address-card"></i></p><span>About</span></label>
+            <div class="clear"></div>
+                <!-- Bar -->
+                <div class="slider">
+                <div class="bar"></div>
+            </div>
+        
+        </nav>
+
+        <div id="searchCoin">
+            <input type="text" id="searchCoinInput" placeholder="Search currency by symbol" >
+            <input type="button" class="button" id="searchButton" value="Search" onclick="onSearchCurrency()">
+        </div>
+    </section>
+    <!-- SPINNER ORBITS -->
+    <div class="spinner">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+          </div>
+    </div>  
+    <div id="currencyDiv"></div>
+    <div id="container">
+        <div id="liveReportsContainer"></div>
+    </div>
+    <div id="aboutContainer"></div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-keyboard="false"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">You can select only 5 cards,<br>Please remove one of the selected cards</h5><br>
+                </div>
+                
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary modal-apply-changes" onclick="onSaveChosenCards()">Save changes</button>
+                </div>
+            </div>
+        </div>
+  </div>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="/src/aboutPage.js"></script>
+    <script src="/src/liveReports.js"></script>
+    <script src="/src/cardDiv.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
